@@ -6,7 +6,16 @@ export default {
             openingHours: '09:00 - 18:00',
             openingDay: 'Mon-Sat-',
             phoneNumber: '+1(305) 1234-5678',
-            emailAddress: 'hello@example.com'
+            emailAddress: 'hello@example.com',
+            menuLinks: [
+                { text: 'Home', link: '/home' },
+                { text: 'Services', link: '/services' },
+                { text: 'About', link: '/about' },
+                { text: 'Projects', link: '/portfolio' },
+                { text: 'Results', link: '/contact' }
+            ],
+            buttonText: 'Get in Touch',
+            logoSrc: '/public/img/logo.png',
         };
     }
 };
@@ -39,6 +48,27 @@ export default {
             </div>
         </div>
     </header>
+    <div class="lower-container">
+        <div>
+            <img :src="logoSrc" alt="Logo" class="logo">
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li v-for="(link, index) in menuLinks" :key="index">
+                        <a :href="link.link">{{ link.text }}</a>
+                    </li>
+                </ul>
+                <button>{{ buttonText }}</button>
+            </nav>
+
+        </div>
+
+
+
+
+    </div>
+
 </template>
 
 <style>
@@ -89,5 +119,56 @@ header {
     }
 
 
+}
+
+.lower-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo {
+    width: 40%;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+
+
+
+    ul {
+        display: flex;
+        gap: 35px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            color: rgb(60, 60, 61);
+            font-size: 20px;
+        }
+    }
+
+    button {
+        text-align: center;
+        height: 40px;
+        width: 150px;
+        border: none;
+        color: white;
+        background-color: var(--bool--buttons--principal);
+    }
+
+    ul li {
+        margin-right: 20px;
+    }
+
+    .nav-bar {
+        width: 40%;
+    }
 }
 </style>

@@ -1,8 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
 
   --bool--header: #21333E;
-  ;
   --bool--buttons--principal: rgb(5, 130, 131);
   --bool--primary: rgb(235, 236, 239);
   --bool--hoover: rgb(0, 166, 166);
