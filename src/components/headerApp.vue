@@ -126,6 +126,8 @@ header {
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
+    margin: 10px;
+
 
 }
 
