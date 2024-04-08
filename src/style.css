@@ -1,11 +1,25 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
+  --bool--header: #21333E;
+  ;
+  --bool--buttons--principal: rgb(5, 130, 131);
+  --bool--primary: rgb(235, 236, 239);
+  --bool--hoover: rgb(0, 166, 166);
+  --bool--contacts--area: rgb(226, 227, 231);
+  --bool--text--decoration: rgb(217, 242, 242);
+  --bool--footer: rgb(13, 27, 42);
 }
 
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
+  /*  max-width: 1280px; */
+  /*  margin: 0 auto;
+  text-align: center; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

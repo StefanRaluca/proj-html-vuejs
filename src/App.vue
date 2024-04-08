@@ -1,13 +1,12 @@
 <script>
 import headerApp from './components/headerApp.vue'
-import mainApp from './components/mainApp.vue';
-import footerApp from './components/footerApp.vue';
+import '@fortawesome/fontawesome-free/css/all.css';
+
 
 export default {
   components: {
     headerApp,
-    mainApp,
-    footerApp,
+
   },
   return: {
 
@@ -19,7 +18,6 @@ export default {
 <template>
 
   <headerApp />
-  <mainApp />
-  <footerApp />
 
-  <style></style>
+</template>
+<style></style>
