@@ -33,7 +33,7 @@ export default {
 
 
             <div class="row gap-3 m-2">
-                <div class="col card">
+                <div class="col card border border-0">
                     <div class="card-body">
                         <div class="d-flex justify-content-between svg_container">
 
@@ -52,7 +52,7 @@ export default {
                     </div>
 
                 </div>
-                <div class="col card">
+                <div class="col card border border-0">
                     <div class="card-body">
                         <div class="d-flex justify-content-between svg_container">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 1024 1040">
@@ -70,7 +70,7 @@ export default {
                     </div>
 
                 </div>
-                <div class="col card">
+                <div class="col card border border-0">
                     <div class="card-body">
                         <div class="d-flex justify-content-between svg_container">
 
@@ -91,7 +91,7 @@ export default {
                 </div>
             </div>
             <div class="row gap-3 m-2 ">
-                <div class="col card">
+                <div class="col card border border-0">
                     <div class="card-body">
                         <div class="d-flex justify-content-between svg_container">
 
@@ -110,7 +110,7 @@ export default {
                     </div>
 
                 </div>
-                <div class="col card">
+                <div class="col card border border-0">
                     <div class="card-body">
                         <div class="d-flex justify-content-between svg_container">
 
@@ -129,7 +129,7 @@ export default {
                     </div>
 
                 </div>
-                <div class="col card ">
+                <div class="col card border border-0">
                     <div class="card-body">
                         <div class="d-flex justify-content-between svg_container">
 
@@ -151,6 +151,46 @@ export default {
             </div>
         </div>
 
+    </section>
+    <section class="the_company d-flex">
+
+        <div class="left_company">
+            <div class="container" style="width: 60%; margin-right: 30px; margin-top: 110px;">
+                <h6 class="fw-semibold">ABOUT THE NETWORK</h6>
+
+                <h2> <span> The</span> Company</h2>
+                <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and
+                    related
+                    services to select clients.</p>
+                <div class="row">
+                    <div class="col card custom-card">
+                        <h5 class="card-title fw-semibold"><i class="fa-solid me-1 fa-shop"></i> Tradition</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col card custom-card">
+                        <h5 class="card-title fw-semibold"> <i class="fa-solid me-1  fa-lock"></i> Security</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col card custom-card">
+                        <h5 class="card-title fw-semibold"><i class="fa-solid me-2  fa-pen-to-square"></i>Certificate
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col card custom-card">
+                        <h5 class="card-title fw-semibold"> <i class="fa-solid me-1  fa-graduation-cap"></i> Expertise
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <button class="btn_left">GET IN TOUCH</button>
+                <button class="btn_right text-uppercase">Read More</button>
+            </div>
+        </div>
+        <div class="right_company">
+            <img src="/img/about-4.jpg" alt="">
+        </div>
     </section>
 </template>
 
@@ -252,6 +292,75 @@ export default {
     p {
         text-align: center;
         width: 200px;
+    }
+}
+
+.the_company {
+    background-color: black;
+    color: white;
+}
+
+.left_company {
+    .container {
+        h6 {
+
+            font-size: 15px;
+            color: var(--bool--buttons--principal);
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-weight: 900;
+            font-size: 40px;
+
+        }
+
+        span {
+            background-color: #0E272D;
+
+            color: white;
+
+        }
+
+        .btn_right {
+
+            text-align: center;
+            height: 40px;
+            width: 150px;
+            border: none;
+            color: white;
+            background-color: black;
+            border: 1px solid var(--bool--buttons--principal);
+            border-radius: 5px;
+
+
+        }
+    }
+
+    .custom-card {
+        background-color: inherit;
+        border: none;
+        color: white;
+
+        i {
+            color: var(--bool--buttons--principal);
+        }
+    }
+}
+
+
+
+
+.right_company {
+    width: 50%;
+
+    img {
+        width: 100%;
     }
 }
 </style>
