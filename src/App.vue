@@ -3,6 +3,7 @@ import headerApp from './components/headerApp.vue';
 import mainApp from './components/mainApp.vue';
 import sectionMainApp from './components/sectionMainApp.vue';
 import latestSectionMain from './components/latestSectionMain.vue';
+import footerApp from './components/footerApp.vue'
 import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -14,6 +15,7 @@ export default {
     mainApp,
     sectionMainApp,
     latestSectionMain,
+    footerApp,
 
   },
   return: {
@@ -29,6 +31,7 @@ export default {
   <mainApp />
   <sectionMainApp />
   <latestSectionMain />
+  <footerApp />
 
 </template>
 <style></style>
