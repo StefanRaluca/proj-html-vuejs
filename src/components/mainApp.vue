@@ -176,20 +176,22 @@ export default {
     }
 }
 
+.btn_right {
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    border: none;
+    color: var(--bool--buttons--principal);
+    background-color: white;
+    border: 1px solid var(--bool--buttons--principal);
+    border-radius: 5px;
+
+}
+
 .center-jumbotron {
 
 
-    .btn_right {
-        text-align: center;
-        height: 40px;
-        width: 150px;
-        border: none;
-        color: var(--bool--buttons--principal);
-        background-color: white;
-        border: 1px solid var(--bool--buttons--principal);
-        border-radius: 5px;
 
-    }
 
     p {
         width: 380px;

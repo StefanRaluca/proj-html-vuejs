@@ -42,6 +42,59 @@ export default {
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container_contact_us">
+
+                    <h6 class="mb-3 mt-2">SEND A MESSAGE</h6>
+                    <h2 class="text-uppercase">Get in <span>Touch</span> </h2>
+                    <p>We will respond to your message as soon as possible.</p>
+                    <form>
+                        <div class="form-group d-flex m-3 gap-2 ">
+                            <input type="text" class="form-control border-0 bg-light rounded-0" placeholder="Name">
+                            <input type="email" class="form-control border-0 bg-light rounded-0" placeholder="Email">
+                        </div>
+                        <div class="form-group d-flex m-3 gap-2">
+                            <input type="text" class="form-control border-0 bg-light rounded-0" placeholder="Phone">
+                            <select class="form-select border-0 bg-light rounded-0"
+                                style="padding: 0.375rem 0.75rem !important;" aria-label="Default select example">
+                                <option value="" disabled selected>More info</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group m-3 gap-2">
+                            <textarea class="form-control border-0 bg-light rounded-0" id="exampleInputMessage1"
+                                rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn_left" style="width: 80px !important;">SEND</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="contact-details">
+                    <h5>Example Inc.</h5>
+                    <p style="color: rgb(182 182 182);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p style="color: rgb(182 182 182);">Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+                    <p style="color: var(--bool--buttons--principal);"> <span class="rounded_design"><i
+                                class="fa-solid fa-phone"></i></span>+1(305) 1234-5678</p>
+                    <p style="color: var(--bool--buttons--principal);"> <span class="rounded_design"><i
+                                class="fa-solid fa-envelope"></i></span>
+                        hello@example.com</p>
+                    <p style="color: var(--bool--buttons--principal);"> <span class="rounded_design"><i
+                                class="fa-solid fa-location-dot"></i></span> Main Avenue, 987
+                    </p>
+                    <button class="btn_right">VIEW MAP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </template>
 <style>
 .top_container_results {
@@ -123,5 +176,50 @@ export default {
 
 
     }
+}
+
+col {
+    h6 {
+        font-weight: 700;
+        margin-top: 1rem;
+
+    }
+
+    p {
+        color: rgb(182 182 182);
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-left: 18px;
+    }
+
+
+}
+
+.contact-details {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+    margin-top: 15px;
+    line-height: 25px;
+
+    h5 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.container_contact_us {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+
+}
+
+.rounded_design {
+    border-radius: 100%;
+    background-color: var(--bool--text--decoration);
+    color: var(--bool--buttons--principal);
+    padding: 6px;
+    margin-right: 0.5rem;
 }
 </style>
