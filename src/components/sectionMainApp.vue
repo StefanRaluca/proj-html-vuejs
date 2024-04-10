@@ -210,14 +210,27 @@ export default {
                 <div class="col poster position-relative">
                     <img src="/img/project-1.jpg" alt="">
                     <h4 class="text-overlay">Academic professional program in social media</h4>
+                    <div class="poster_overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+
                 </div>
                 <div class="col poster  position-relative">
                     <img src="/img/project-2.jpg" alt="">
                     <h4 class="text-overlay">President's speech at the annual meeting</h4>
+                    <div class="poster_overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
                 <div class="col poster  position-relative">
                     <img src="/img/project-3.jpg" alt="">
                     <h4 class="text-overlay">International business trip in Shanghai</h4>
+                    <div class="poster_overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
             </div>
 
@@ -225,14 +238,26 @@ export default {
                 <div class="col poster  position-relative">
                     <img src="/img/project-4.jpg" alt="">
                     <h4 class="text-overlay">Technology workshop with education theme</h4>
+                    <div class="poster_overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
                 <div class="col poster  position-relative">
                     <img src="/img/project-5.jpg" alt="">
                     <h4 class="text-overlay">Donation of clothes and food to the partner NGO</h4>
+                    <div class="poster_overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
                 <div class="col poster  position-relative">
                     <img src="/img/project-6.jpg" alt="">
                     <h4 class="text-overlay">Confraternization of the procurement team</h4>
+                    <div class="poster_overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
             </div>
         </div>
@@ -373,6 +398,7 @@ export default {
 
 .poster {
     width: 20%;
+    position: relative;
 
     img {
         width: 100%;
@@ -381,11 +407,55 @@ export default {
     }
 }
 
+.poster_overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.poster:hover .poster_overlay {
+    opacity: 1;
+
+}
+
+.poster:hover {
+    cursor: pointer;
+}
+
+.poster_overlay p {
+    margin: 0;
+}
+
+.fa-arrow-right {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white
+}
+
+.poster:hover .fa-arrow-right {
+    opacity: 1;
+}
+
+.poster:hover .text-overlay {
+    bottom: 40%;
+    transform: translateY(50%);
+}
+
 .text-overlay {
     position: absolute;
     bottom: 15px;
     color: white;
     font-weight: 600;
+    transition: bottom 0.3s ease;
 
 }
 

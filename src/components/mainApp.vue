@@ -7,10 +7,11 @@ export default {
 
 <template>
     <div class="jumbotron">
+        <div class="first_bg" style="background-image: url(/img/bg-raluca.png);"></div>
+        <div class="second_bg" style="background-image: url(/img/bg-parallax.png);"></div>
         <div class="center-jumbotron">
             <h1>Ready <span>Team</span></h1>
-            <p>No matter what your company needs, we will be ready to assist you in the best possible way.
-            </p>
+            <p>No matter what your company needs, we will be ready to assist you in the best possible way.</p>
             <button class="text-uppercase btn_left">Get in touch</button>
             <button class="text-uppercase btn_right">Read more</button>
         </div>
@@ -149,17 +150,44 @@ export default {
 
 
 <style>
+.first_bg,
+.second_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.first_bg {
+    z-index: 1;
+    background-position: center top;
+
+}
+
+.second_bg {
+    z-index: 2;
+
+}
+
+
+
 .jumbotron {
-    background-image: url(/img/bg-parallax.png);
+    background-image: url(/img/bg-raluca.png);
     background-position: center top;
     text-align: center;
     background-size: cover;
     height: 800px;
+    /* Imposta l'altezza del jumbotron */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -160px;
+    position: relative;
+    overflow: hidden;
+
 
 
 
@@ -191,7 +219,9 @@ export default {
 .center-jumbotron {
 
 
+    position: relative;
 
+    z-index: 3;
 
     p {
         width: 380px;
@@ -213,5 +243,15 @@ export default {
     background-color: var(--bool--buttons--principal);
     border-radius: 5px;
     margin-right: 15px;
+}
+
+.btn_left:hover {
+    background-color: var(--bool--hoover);
+
+}
+
+.btn_right:hover {
+    background-color: var(--bool--hoover);
+    color: white;
 }
 </style>

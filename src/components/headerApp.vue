@@ -122,11 +122,12 @@ header {
 }
 
 .lower-container {
+    background-image: url(/img/bg-raluca.png);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
-    margin: 10px;
+
 
 
 }
