@@ -213,7 +213,7 @@ export default {
                     <div class="poster_overlay">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div><i class="fa-solid fa-arrow-right-long"></i></div>
 
                 </div>
                 <div class="col poster  position-relative">
@@ -222,7 +222,7 @@ export default {
                     <div class="poster_overlay">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div><i class="fa-solid fa-arrow-right-long"></i></div>
                 </div>
                 <div class="col poster  position-relative">
                     <img src="/img/project-3.jpg" alt="">
@@ -230,7 +230,7 @@ export default {
                     <div class="poster_overlay">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div><i class="fa-solid fa-arrow-right-long"></i></div>
                 </div>
             </div>
 
@@ -241,7 +241,7 @@ export default {
                     <div class="poster_overlay">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div><i class="fa-solid fa-arrow-right-long"></i></div>
                 </div>
                 <div class="col poster  position-relative">
                     <img src="/img/project-5.jpg" alt="">
@@ -249,7 +249,7 @@ export default {
                     <div class="poster_overlay">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div><i class="fa-solid fa-arrow-right-long"></i></div>
                 </div>
                 <div class="col poster  position-relative">
                     <img src="/img/project-6.jpg" alt="">
@@ -257,7 +257,7 @@ export default {
                     <div class="poster_overlay">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div><i class="fa-solid fa-arrow-right-long"></i></div>
                 </div>
             </div>
         </div>
@@ -265,41 +265,6 @@ export default {
 
 </template>
 <style>
-.services {
-    background-color: #EEF4ED;
-
-    h2 {
-        font-weight: 800;
-        font-size: 40px;
-
-        span {
-            background-color: var(--bool--text--decoration);
-            color: var(--bool--buttons--principal);
-
-        }
-    }
-
-    h6 {
-
-        font-size: 15px;
-        color: var(--bool--buttons--principal)
-    }
-
-
-}
-
-.fa-arrow-right {
-    font-size: 25px;
-    color: var(--bool--hoover);
-}
-
-.text_card {
-    p {
-        text-align: center;
-        width: 200px;
-    }
-}
-
 .the_company {
     background-color: black;
     color: white;
@@ -431,7 +396,7 @@ export default {
     margin: 0;
 }
 
-.fa-arrow-right {
+.fa-arrow-right-long {
     position: absolute;
     top: 5%;
     left: 80%;
@@ -441,7 +406,7 @@ export default {
     color: white
 }
 
-.poster:hover .fa-arrow-right {
+.poster:hover .fa-arrow-right-long {
     opacity: 1;
 }
 

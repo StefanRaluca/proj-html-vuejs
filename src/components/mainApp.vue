@@ -42,7 +42,7 @@ export default {
                                     fill=" rgb(5, 130, 131)" />
                                 <path fill="rgba(0, 0, 0, 0)" d="M0 0h1024v1040H0z" />
                             </svg>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right arrow_services"></i>
                         </div>
                         <div class="text_card">
                             <h5 class="card-title fw-semibold m-3">Audit & Assurance</h5>
@@ -59,7 +59,7 @@ export default {
                                     fill="rgb(5, 130, 131)" />
                                 <path fill="rgba(0, 0, 0, 0)" d="M0 0h1024v960H0z" />
                             </svg>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right arrow_services"></i>
                         </div>
                         <div class="text_card">
                             <h5 class="card-title fw-semibold m-3">Financial Advisory</h5>
@@ -77,7 +77,7 @@ export default {
                                     fill=" rgb(5, 130, 131)" />
                                 <path fill="rgba(0, 0, 0, 0)" d="M0 0h1024v1040H0z" />
                             </svg>
-                            <i class="fa-solid fa-arrow-right "></i>
+                            <i class="fa-solid fa-arrow-right arrow_services "></i>
                         </div>
                         <div class="text_card">
                             <h5 class="card-title fw-semibold m-3">Analytics and M&A</h5>
@@ -97,7 +97,7 @@ export default {
                                     fill=" rgb(5, 130, 131)" />
                                 <path fill="rgba(0, 0, 0, 0)" d="M0 0h1024v1040H0z" />
                             </svg>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right arrow_services"></i>
                         </div>
                         <div class="text_card">
                             <h5 class="card-title fw-semibold m-3">Middle Marketing</h5>
@@ -115,7 +115,7 @@ export default {
                                     fill=" rgb(5, 130, 131)" />
                                 <path fill="rgba(0, 0, 0, 0)" d="M0 0h1024v1040H0z" />
                             </svg>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right arrow_services"></i>
                         </div>
                         <div class="text_card">
                             <h5 class="card-title fw-semibold m-3">Legal Consulting</h5>
@@ -133,7 +133,7 @@ export default {
                                     fill=" rgb(5, 130, 131)" />
                                 <path fill="rgba(0, 0, 0, 0)" d="M0 0h1024v1040H0z" />
                             </svg>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right arrow_services"></i>
                         </div>
                         <div class="text_card">
                             <h5 class="card-title fw-semibold m-3">Regulatory Risk</h5>
@@ -180,7 +180,6 @@ export default {
     text-align: center;
     background-size: cover;
     height: 800px;
-    /* Imposta l'altezza del jumbotron */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,8 +216,6 @@ export default {
 }
 
 .center-jumbotron {
-
-
     position: relative;
 
     z-index: 3;
@@ -253,5 +250,56 @@ export default {
 .btn_right:hover {
     background-color: var(--bool--hoover);
     color: white;
+}
+
+.services {
+    background-color: #EEF4ED;
+
+    h2 {
+        font-weight: 800;
+        font-size: 40px;
+
+        span {
+            background-color: var(--bool--text--decoration);
+            color: var(--bool--buttons--principal);
+
+        }
+    }
+
+    h6 {
+
+        font-size: 15px;
+        color: var(--bool--buttons--principal)
+    }
+
+
+}
+
+
+.fa-arrow-right {
+    font-size: 25px;
+    color: var(--bool--hoover);
+
+}
+
+.fa-arrow-right:hover {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--bool--buttons--principal);
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+
+
+
+.text_card {
+    p {
+        text-align: center;
+        width: 200px;
+    }
 }
 </style>
